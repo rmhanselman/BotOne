@@ -19,12 +19,12 @@ public class Entity extends ListenerAdapter {
     }
     public int status( int status){
         if(hp <= 0){
-            status = -1;
             System.out.println("Insert name has been killed.");
-        } else{
-            status = 1;
+            return -1;
+        } 
+        else{
+            return = 1;
         }
-        return status;
     }
     
     //Getter Class Methods
